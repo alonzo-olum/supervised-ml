@@ -1,31 +1,31 @@
 # KNN Model
 
 ## Prerequisites
-1. Install venv for python3.
+1. Install venv for python3 and create a virtualenv
 ```
-python3 -m pip install --user virtualenv
+$ python3 -m pip install venv env
 ```
-2. Create a virtualenv (recommended):
+2. Activate the venv:
 ```
-python3 -m venv env
+$ source <env dir>/bin/activate
 ```
-3. Activate the venv:
+3. Install the dependencies:
 ```
-source <env dir>/bin/activate
+$ python3 -m pip install -r requirements.txt
 ```
-4. Install the dependencies:
+If that doesn't work use:
 ```
-python3 -m pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 ## Running the model
 
 ### Run a prediction
 ```
-python3 knn_prediction.py
+$ python3 knn_prediction.py
 ```
 
 ### Visualize the pairplot
 ```
-python3 iris_pairplot.py
+$ python3 iris_pairplot.py
 
